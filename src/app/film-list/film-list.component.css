@@ -1,0 +1,9 @@
+button.btnAdd {
+  margin-left: 570px;
+}
+
+#films-not-found{
+  /*margin: 0 auto !important;*/
+  text-align: center;
+  font-size: 20px;
+}

@@ -1,0 +1,31 @@
+<md-card class="film-card-view1" *ngIf="view === 1">
+  <img class="img-view1" md-card-image src="{{filmDetails.Poster}}">
+  <md-card-content >
+    <md-card-title>{{filmDetails.Title}}</md-card-title>
+    <p>Производство: {{filmDetails.Production}}</p>
+    <p>Страна: {{filmDetails.Country}}</p>
+    <p>Релиз: {{filmDetails.Released}}</p>
+    <p>Описание: {{filmDetails.Plot}}</p>
+    <p>Продолжительность: {{filmDetails.Runtime}}</p>
+    <p>Рейтинг: {{filmDetails.imdbRating}}/10 <md-icon class = "thumb-up" *ngIf="filmDetails.imdbRating >= 8">thumb_up</md-icon></p>
+  </md-card-content>
+  <md-card-actions>
+    <button md-button>Подробнее</button>
+  </md-card-actions>
+</md-card>
+
+<div class="film-card-view2" *ngIf="view === 2">
+  <img class="img-view2" md-card-image src="{{filmDetails.Poster}}">
+  <div class="film-content-view2">
+    <h2>{{filmDetails.Title}}</h2>
+    <p>Производство: {{filmDetails.Production}}</p>
+    <p>Страна: {{filmDetails.Country}}</p>
+    <p>Релиз: {{filmDetails.Released}}</p>
+    <p>{{filmDetails.Plot}}</p>
+    <p>Продолжительность: {{filmDetails.Runtime}}</p>
+    <p>Рейтинг: {{filmDetails.imdbRating}}/10 <md-icon class = "thumb-up" *ngIf="filmDetails.imdbRating >= 8">thumb_up</md-icon></p>
+    <md-card-actions>
+      <button md-button>Подробнее</button>
+    </md-card-actions>
+  </div>
+</div>
