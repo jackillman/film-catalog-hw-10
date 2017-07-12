@@ -7,10 +7,7 @@ import { FilmListComponent } from "app/film-list/film-list.component";
 
 
 export const routes: Routes = [
-   
-    { path: "film-list",    component: FilmListComponent },
-
- 
+    { path: "film-list",        component: FilmListComponent },
     { path: "formslog",         component: FormComponent }
 
 ];
